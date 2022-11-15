@@ -1,0 +1,49 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#wrapper{
+    margin: 50px auto;
+    border: 1px solid blueviolet;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 20px 40px 20px 80px;
+}
+h1 {
+    color: blueviolet;
+    font-size: 48px;
+    margin-top: 0;
+}
+.button{
+    background: blueviolet;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.input{
+    padding: 5px 10px;
+}
+li{
+    color:rgb(36, 37, 37);
+    line-height: 1.5em;
+
+}
+ul{
+    list-style-type:circle;
+}
+.deltask{
+    background: rgb(188, 140, 232);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 3px 5px;
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+.deltask:hover{
+    background:red;
+    cursor: pointer;
+}
