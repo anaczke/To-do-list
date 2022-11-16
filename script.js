@@ -69,3 +69,4 @@ let inProgress = (e)=> {
     proSel.parentElement.style.fontWeight = '600';
 }
 list.addEventListener('click', inProgress);
+
