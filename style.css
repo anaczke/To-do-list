@@ -47,3 +47,17 @@ ul{
     background:red;
     cursor: pointer;
 }
+.progtask{
+    background: rgb(142, 237, 139);
+    border: none;
+    border-radius: 5px;
+    color:rgb(36, 37, 37);;
+    font-weight: 500;
+    padding: 3px 5px;
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+.progtask:hover{
+    background: rgb(49, 243, 43);;
+    cursor: pointer;
+}

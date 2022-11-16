@@ -19,10 +19,19 @@ wrapper.append(button);
 let list = document.createElement('ul');
 wrapper.append(list);
 
-function addTask(e){
+let li;
+let del;
+let prog;
+
+let addTask = (e)=>{
 let li = document.createElement('li')
 li.textContent = input.value;
 list.append(li);
+
+let prog = document.createElement('button');
+prog.textContent ='In Progress';
+prog.setAttribute('class', 'progtask');
+li.append(prog);
 
 let del = document.createElement('button');
 del.innerHTML = "Done"
@@ -33,14 +42,23 @@ input.value = '';
 return list;
 }
 
-button.onclick = addTask;
+button.addEventListener('click', addTask);
 
-function deleteTask(e){
+let deleteTask = (e)=>{
     let delSel = e.target;
+    if(delSel.className != 'deltask') return;
     delSel.parentElement.remove();
-    console.log(delSel);
-    console.log('działa');
 }
 
-list.onclick = deleteTask;
+list.addEventListener('click', deleteTask);
+
+
+
+//inny sposób zapisu - funkcja od razu w handlerze
+// list.onclick = function(e){
+//     let delSel = e.target;
+//     if(delSel.className != 'deltask') return;
+//     delSel.parentElement.remove();
+// }
+
 
