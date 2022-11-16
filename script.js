@@ -62,3 +62,10 @@ list.addEventListener('click', deleteTask);
 // }
 
 
+let inProgress = (e)=> {
+    let proSel = e.target;
+    if(proSel.className != 'progtask') return;
+    proSel.parentElement.style.color = 'green';
+    proSel.parentElement.style.fontWeight = '600';
+}
+list.addEventListener('click', inProgress);
